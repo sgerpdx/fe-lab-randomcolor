@@ -2,8 +2,26 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <div
+    class="mainThing"
+  >
+    <p>
+      Incredibly Hypnotic Random Color Zone
+    </p>
+    <div
+      class="colorInterface"
+    >
+      <p>
+        this is a message from the rainbow hawks of titan
+      </p>
+      <div
+        class="colorBox"
+      >
+        <div
+          style="background: rgb(88, 235, 52); height: 40px; width: 40px;"
+        />
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;
