@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DisplayColor from '../../components/app/Display/DisplayColor';
+import styles from './RandomColor.css';
 
 export default class RandomColor extends Component {
   state = {
@@ -16,9 +17,13 @@ export default class RandomColor extends Component {
     await setInterval(this.randomColorChoice(this.state.paletteArray), 1000);
   };
 
+  // componentDidUpdate = async () => {
+  //   await setInterval(this.randomColorChoice(this.state.paletteArray), 1000);
+  // };
+
   render() {
     return (
-      <div>
+      <div className={styles.colorInterface}>
         <p>this is a message from the rainbow hawks of titan</p>
         <DisplayColor newColor={this.state.color} />
       </div>

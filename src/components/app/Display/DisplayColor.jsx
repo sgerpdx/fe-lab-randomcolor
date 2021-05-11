@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import styles from './DisplayColor.css';
 
 export default class DisplayColor extends Component {
   render() {
     return (
-      <div>
-        display shout out
+      <div className={styles.colorBox}>
         <div
           style={{
             background: this.props.newColor,
