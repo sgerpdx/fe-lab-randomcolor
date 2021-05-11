@@ -6,7 +6,11 @@ export default class DisplayColor extends Component {
       <div>
         display shout out
         <div
-          style={{ background: '#58eb34', height: '40px', width: '40px' }}
+          style={{
+            background: this.props.newColor,
+            height: '40px',
+            width: '40px',
+          }}
         ></div>
       </div>
     );
