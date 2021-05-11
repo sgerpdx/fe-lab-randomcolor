@@ -8,18 +8,15 @@ export default class RandomColor extends Component {
     paletteArray: ['#32a8a6', '#ed6f00', '#c40a86', '#1f25d1', '#58eb34'],
   };
 
-  randomColorChoice = (arr) => {
+  randomColorChoice = () => {
+    const arr = this.state.paletteArray;
     const colorIndex = Math.floor(Math.random() * arr.length);
     this.setState({ color: arr[colorIndex] });
   };
 
   componentDidMount = async () => {
-    await setInterval(this.randomColorChoice(this.state.paletteArray), 1000);
+    await setInterval(this.randomColorChoice, 1000);
   };
-
-  // componentDidUpdate = async () => {
-  //   await setInterval(this.randomColorChoice(this.state.paletteArray), 1000);
-  // };
 
   render() {
     return (
