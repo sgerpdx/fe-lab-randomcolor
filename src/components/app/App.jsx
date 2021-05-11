@@ -1,5 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
+import RandomColor from '../../containers/Colors/RandomColor';
 
-export default function App() {
-  return <h1>Hello World</h1>;
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <p>hey there</p>
+        <RandomColor />
+      </div>
+    );
+  }
 }
